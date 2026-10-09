@@ -349,7 +349,7 @@ void moveToNextTurn(Room room) {
 Future<void> main() async {
   final server = await HttpServer.bind(
     InternetAddress.anyIPv4,
-    8080,
+  int.parse(Platform.environment['PORT'] ?? '8080'),
   );
 
   print(
