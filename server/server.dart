@@ -353,7 +353,7 @@ Future<void> main() async {
   );
 
   print(
-    'SISCO server listening on ws://0.0.0.0:8080',
+    'SISCO server listening on ws://0.0.0.0:${server.port}',
   );
 
   await for (final request in server) {
